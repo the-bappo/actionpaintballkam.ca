@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Action Paintball</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Styles personnalisés -->
+  <link rel="stylesheet" href="src/style.css">
+
+  <script src="src/script.js"></script>
+
+</head>
+
+<body>
+  <!-- Fond de brouillard -->
+  <div id="fog">
+    <div class="fog-layer"></div>
+    <div class="fog-layer"></div>
+    <div class="fog-layer"></div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand mx-auto" href="#">Action Paintball</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#Accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#NosStages">Nos Stages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Règlement">Règlement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tarifs">Tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Gallerie">Gallerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#charte-risques">Charte des Risques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#NotreEmplacement">Notre Emplacement</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenu principal avec un container Bootstrap -->
+  <main class="flex-grow-1">
+    <div class="container mt-5" id="Accueil">
+      <h1 class="text-center">Bienvenue à Action Paintball</h1>
+      <p class="text-center">Vivez l'action intense avec nos différents stages et équipements de paintball.</p>
+    </div>
+
+    <!-- Gallerie stages -->
+    <section id="NosStages" class="container my-5">
+      <h2 class="text-center mb-5 text-warning">Nos Stages</h2>
+      <div class="card shadow-lg border-0 bg-transparent">
+        <div class="card-body p-4">
+          <div id="carousel-stages" class="carousel slide mx-auto" data-bs-ride="carousel" data-bs-interval="5000"
+            style="max-width: 100%;">
+            <!-- Indicateurs -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel-stages" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel-stages" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel-stages" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel-stages" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carousel-stages" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carousel-stages" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carousel-stages" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carousel-stages" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carousel-stages" data-bs-slide-to="8"
+                aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carousel-stages" data-bs-slide-to="9"
+                aria-label="Slide 10"></button>
+              <button type="button" data-bs-target="#carousel-stages" data-bs-slide-to="10"
+                aria-label="Slide 11"></button>
+              <button type="button" data-bs-target="#carousel-stages" data-bs-slide-to="11"
+                aria-label="Slide 12"></button>
+            </div>
+            <!-- Slides -->
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="img/stages/stage1_1563.jpg" class="d-block w-100 rounded" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-warning">Adrénaline garantie</h5>
+                  <p>Des sensations fortes à chaque moment, venez repousser vos limites.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/stages/stage1_1564.jpg" class="d-block w-100 rounded" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-warning">Stratégie et Fun</h5>
+                  <p>Formez des alliances et développez des stratégies pour gagner en équipe.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/stages/stage1_1565.jpg" class="d-block w-100 rounded" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-warning">Stratégie et Fun</h5>
+                  <p>Formez des alliances et développez des stratégies pour gagner en équipe.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/stages/stage1_1567.jpg" class="d-block w-100 rounded" alt="Slide 4">
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/stages/stage1_1568.jpg" class="d-block w-100 rounded" alt="Slide 5">
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/stages/stage2_1555.jpg" class="d-block w-100 rounded" alt="Slide 6">
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/stages/stage2_1556.jpg" class="d-block w-100 rounded" alt="Slide 7">
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/stages/stage2_1559.jpg" class="d-block w-100 rounded" alt="Slide 8">
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/stages/stage2_1560.jpg" class="d-block w-100 rounded" alt="Slide 9">
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/stages/stage3_1557.jpg" class="d-block w-100 rounded" alt="Slide 10">
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/stages/stage3_1558.jpg" class="d-block w-100 rounded" alt="Slide 11">
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/stages/stage5_1543.jpg" class="d-block w-100 rounded" alt="Slide 12">
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+            </div>
+            <!-- Contrôles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-stages" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-stages" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Suivant</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Règlement -->
+    <section id="Règlement" class="container my-5">
+      <div class="row justify-content-center align-items-stretch">
+        <div class="col-12 text-center mb-4">
+          <h2 class="text-warning">Règlement</h2>
+          <p class="lead text-white">Pour garantir une expérience de jeu sûre et amusante, merci de bien vouloir lire
+            attentivement les règles ci-dessous.</p>
+        </div>
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="card bg-dark text-light border-0 shadow-lg h-100 w-100">
+            <div class="card-body p-4 d-flex flex-column justify-content-between">
+              <h4 class="card-title text-warning mb-3">Règlements Généraux</h4>
+              <ul class="list-group list-group-flush bg-transparent">
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Port du masque :</strong> Obligatoire en tout temps. Les joueurs ne peuvent enlever leur
+                  masque que dans les endroits prévus à cet effet soit l'acceuil et les aires de repos. Ce règlement est
+                  le plus important car votre sécurité est notre priorité.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Marqueurs sécurisés :</strong> Les marqueurs doivent être sécurisés avant l'entrée dans les
+                  aires d'accueil et de repos. Les joueurs doivent donc appliquer le cran de sûreté ainsi que le protège
+                  canon du marqueur dès qu'ils s'approchent de l'acceuil ou des aires de repos.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Tirs :</strong> Interdiction de tirer sur un joueur à moins de 5 mètres. Dans cette situation,
+                  le joueur doit interpeller son adversaire en lui signalant que celui-ci est touché. Il est possible de
+                  faire exception lorsequ'il y a arrangement entre les joureurs.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Arbitre :</strong> Les joueurs doivent en tout temps respecter les consignes et décisions de
+                  l'arbitre. Ces derniers son identifiés par un masque orange et/ou un chandail orange. Il est aussi
+                  interdit de tirer sur l'arbitre.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Équipement personnel :</strong> Doit être inspecté par l'arbitre pour que celui ci s'assure de
+                  leur conformité aux règles de sécurité en vigeur. Les marqueurs personnels seront aussi testés
+                  (vélocité max de 300fps) avant le début des activités.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Balles de paintball :</strong> Seul les balles fournies/vendues par Action Paintball sont
+                  autorisées sur le site.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Violence physique ou verbale :</strong> Aucune tolèrence à la violence de tout genre. Les
+                  conflits doivent être réglés par les joueurs en dehors du terrain. Nous désirons jouer dans un
+                  environnement amical et agréable.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Tricherie :</strong> La tricherie et le tir abusif sur un joueur ne sont aucunement tolérés.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Infrastructures :</strong> Il est très important de faire attention aux Infrastructures ainsi
+                  qu'à l'équipement mis à votre disposition.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4 d-flex">
+          <div class="card bg-dark text-light border-0 shadow-lg h-100 w-100">
+            <div class="card-body p-4 d-flex flex-column ">
+              <h4 class="card-title text-warning mb-3">Autres Détails Importants</h4>
+              <ul class="list-group list-group-flush bg-transparent">
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Vêtements :</strong> Les participants doivent être conscients de leurs limites physiques et
+                  adopter un style de jeu en conséquence. De plus, étant donné que le jeu s'exerce en terrain boisé sur
+                  un sol accidenté, le port de bottes ainsi que des vêtements de type militaire est fortement
+                  recommendé. À noter que les taches de peinture disparaissent facilement à la machine à laver.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Installations sanitaires :</strong> Des installations satinaires sont disponibles sur place.
+                  Votre collaboration est appréciée afin de les garder propres.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Nourriture et breuvages :</strong> Comme nous sommes conscients que l'alimentation ainsi que
+                  l'hydratation sont primordiales lors de la pratique d'un sport, des brevages et collations sont en
+                  vente à l'acceuil. Nous vous prions de jeter vos déchets dans les poubelles dituées dans les aires de
+                  reos et non dans les aires de jeu.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Cigarette, alcool et drogues :</strong> Les cigarettes sont permises uniquement dans les aires
+                  de repos. L'alcool peut être toléré avec l'accord du propriétaire et ce, en buvant avec modération.
+                  Toutes les drogues son interdites.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Les parties :</strong> Chaque début et fin de partie sera marqué par un signal sonore de
+                  l'arbitre. Les missions, jeux et scénarios sont expliqués en début de chaque partie/manche.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Blessures :</strong> Nous vous prions de nous aviser en cas de blessure pour que nous
+                  puissions vous aider le mieux possible. Certains membres de notre personnel sont qualifiés en
+                  secourisme.
+                </li>
+                <li class="list-group-item bg-transparent text-light">
+                  <strong>Bris de matériel/infrastructure :</strong> Nous vous demandons de nous aviser de tous type de
+                  bris de matériel ou d'infrastructure pour que nous puissions les réparer rapidement. Action Paintball
+                  se réserve le droit d'expulser tout joueur qui ne respecte pas cette réglementation et ce, sans
+                  remboursement. Action Paintball a comme priorité la sécurité de tous les participants.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Prerequis -->
+    <section id="Prerequis" class="container my-5">
+      <h2 class="text-center mb-4 text-warning">Conditions préalable</h2>
+      <div class="row justify-content-center">
+        <div class="row justify-content-center">
+
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Pour Inscription</h5>
+                <p class="card-text">Nombre minimum de personnes : <strong>6</strong></p>
+                <p class="card-text">Nombre maximum de personnes : <strong>50</strong></p>
+                <p class="card-text">(Votre groupe peut ëtre obligé de partager le terrain avec d'autres)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Pour être le seul groupe sur le terrain</h5>
+                <p class="card-text">Nombre minimum de personnes : <strong>30</strong></p>
+                <p class="card-text">Nombre maximum de personnes : <strong>50</strong></p>
+                <p class="card-text">(2000 balles offertes pour un groupe de cette taille)</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Tarifs -->
+    <section id="tarifs" class="container my-5">
+      <h2 class="text-center mb-4 text-warning">Nos Tarifs 2025</h2>
+      <div class="row justify-content-center">
+        <!-- Equipement fourni -->
+        <div class="col-10 mb-4">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Inclu avec tous les forfaits</h5>
+              <div class="row justify-content-center">
+                <div class="col-md-4">
+                  <p>Marqueur&nbsp;semi-automatique&nbsp;FT-12</p>
+                  <p>200&nbsp;balles&nbsp;</p>
+                  <p>Air&nbsp;comprime&nbsp;a&nbsp;volonte</p>
+                </div>
+                <div class="col-md-4">
+                  <p>Habit&nbsp;de&nbsp;camoufelage&nbsp;complet</p>
+                  <p>Masque&nbsp;de&nbsp;paintball&nbsp;thermal</p>
+                  <p>Plastron&nbsp;et&nbsp;Gants</p>
+                </div>
+                <div class="col-md-4">
+                  <p>Harnais&nbsp;4&nbsp;pods</p>
+                  <p>4&nbsp;moniteurs&nbsp;pour&nbsp;20&nbsp;joueurs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inscription Adulte -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Inscription Adulte</h5>
+              <p class="card-text">Journée complète : <strong>50,00 $</strong></p>
+              <p class="card-text">Demi-journée : <strong>45,00 $</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Forfait Journée Adulte -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Forfait Journée Adulte</h5>
+              <p class="card-text">Avec 700 balles : <strong>80,00 $</strong></p>
+              <p class="card-text">Demi-journée : <strong>75,00 $</strong></p>
+              <p class="card-text">Réduction Étudiants (-18 ans) : <strong>-5,00 $</strong> sur tous les tarifs</p>
+            </div>
+          </div>
+        </div>
+        <!-- Nouveau forfait -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Nouveau Forfait</h5>
+              <p class="card-text">1200 balles pour une journée : <strong>110,00 $</strong></p>
+              <p class="card-text">Harnais + 4 pods gratuit avec ce forfait</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prix des fumigènes -->
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Prix des Fumigènes</h5>
+                <p class="card-text">Gros : <strong>25,00 $</strong> (2 pour 45,00 $)</p>
+                <p class="card-text">Petit : <strong>20,00 $</strong> (2 pour 35,00 $)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grenade sonore -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Grenade Sonore</h5>
+                <p class="card-text">Prix : <strong>10,00 $</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Balles additionnelles -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Balles Additionnelles</h5>
+                <p class="card-text">500 balles : <strong>35,00 $</strong></p>
+                <p class="card-text">2000 balles : <strong>120,00 $</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Sectio offres speciales-->
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Nouveau Forfait</h5>
+                <p class="card-text">1200 balles pour une journée : <strong>110,00 $</strong></p>
+                <p class="card-text">Harnais + 4 pods gratuit avec ce forfait</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- Gallerie -->
+    <section id="Gallerie" class="container my-5">
+      <h2 class="text-center mb-5 text-warning">Gallerie</h2>
+      <div class="card shadow-lg border-0 bg-transparent">
+        <div class="card-body p-4">
+          <div id="carousel-gallerie" class="carousel slide mx-auto" data-bs-ride="carousel" data-bs-interval="5000"
+            style="max-width: 100%;">
+            <!-- Indicateurs -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel-gallerie" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel-gallerie" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel-gallerie" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel-gallerie" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            </div>
+            <!-- Slides -->
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="img/Screenshot_20240719_222246_Photos.jpg" class="d-block w-100 rounded" alt="Slide 1" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-warning">Petite partie</h5>
+                  <p>Vivez l'action en petit comité, ressentez l'adrénaline d'une bataille rapprochée.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Screenshot_20240719_222111_Photos.jpg" class="d-block w-100 rounded" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-warning">Stratégie et Fun</h5>
+                  <p>Formez des alliances et développez des stratégies pour gagner en équipe.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/combine.jpg" class="d-block w-100 rounded" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-warning">Adrénaline garantie</h5>
+                  <p>Des sensations fortes à chaque moment, venez repousser vos limites.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/combine2.jpg" class="d-block w-100 rounded" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-warning">Adrénaline garantie</h5>
+                  <p>Des sensations fortes à chaque moment, venez repousser vos limites.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Contrôles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-gallerie"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-gallerie"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Suivant</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Charte des Risques -->
+    <section id="charte-risques" class="container my-5">
+      <h2 class="text-center text-warning">Charte des Risques et Responsabilités</h2>
+      <p class="lead text-center text-white">Veuillez lire attentivement et signer avant de participer aux activités.
+      </p>
+      <div class="form-container bg-dark text-light p-4 rounded shadow-lg">
+        <!-- Code HTML de la charte ici -->
+        <h2>ACCEPTATION DES RISQUES ET DES RESPONSABILITÉS</h2>
+        <h3>PAR UNE PERSONNE DE 14 ANS ET PLUS</h3>
+        <p class="text-center"><strong>*** LIRE AVANT DE SIGNER ***</strong></p>
+        <p>Je désire participer au programme d’<strong>Action Paintball</strong> et à ses événements et activités
+          connexes.</p>
+        <h4>J’AI PRIS CONNAISSANCE DES DÉCLARATIONS SUIVANTES ET JE LES ACCEPTE:</h4>
+
+        <ol>
+          <li>Les activités pratiquées dans le cadre du programme contiennent des risques. Ma participation entraîne des
+            risques de blessures graves ou de décès comme tous sports.</li>
+          <li>J’estime que j’ai la capacité physique, émotionnelle et mentale requise pour participer au maximum au
+            programme.</li>
+          <li>Je connais toutes les règles applicables à la participation au programme, et je les respecterai.</li>
+          <li>Mon matériel est en bon état mécanique et convient à l’utilisation que j’en ferai pendant le programme.
+          </li>
+          <li>Il est entendu qu’il m’appartient à moi uniquement d’assurer ma sécurité pendant toute ma participation au
+            programme.</li>
+          <li>Si, au cours de ma participation au programme j’apprends ou je constate un changement de mon état de santé
+            ou de mon état physique, émotionnel ou mental, je me sens en danger ou menacé pour une raison quelconque, je
+            remarque un élément de danger de quelque nature que ce soit dans le cadre du programme, <strong>J’ARRÊTERAI
+              IMMÉDIATEMENT MA PARTICIPATION ET J’EN INFORMERAI L’OFFICIEL LE PLUS PRÈS.</strong></li>
+          <li>Je suis prêt à accepter tous les risques de blessures ou de décès que je cours pendant ma participation au
+            programme, qu’ils soient connus ou non, et j’assume l’entière responsabilité de mes actes et de mon
+            comportement. <strong>Nos actes nous suivent.</strong></li>
+          <li><strong>J’AI LU LA PRÉSENTE DÉCLARATION DES RISQUES ET DES RESPONSABILITÉS, JE LA COMPRENDS, JE L’ACCEPTE
+              ET JE CHOISIS DE LA SIGNER.</strong></li>
+          <li>Je serai vigilant sur l’état de mon équipement et en informerai l’officiel, si problème ou bris il y a
+            durant la participation au programme.</li>
+        </ol>
+
+        <div class="signature-line">
+          <p><strong>PRÉNOM ET NOM COMPLET DU JOUEUR EN LETTRES MAJUSCULES :</strong></p>
+          <input type="text" class="form-control mb-3" placeholder="">
+
+          <p><strong>SIGNATURE :</strong></p>
+          <input type="text" class="form-control mb-3" placeholder="">
+
+          <p><strong>DATE :</strong></p>
+          <input id="date" type="date" class="form-control" placeholder="">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <button id="print-charte" class="btn btn-custom d-block mx-auto mb-2" onclick="printCharte()">Imprimer la
+              charte</button>
+          </div>
+          <div class="col-6">
+            <a id="download-pdf" class="btn btn-custom d-block mx-auto mb-3"
+              href="src/Charte des risques et responsabilités.pdf" download>Télécharger la Charte en PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Google Map -->
+    <div class="container my-5" id="NotreEmplacement">
+      <h2 class="text-center mb-4 text-warning">Notre Emplacement</h2>
+      <div class="ratio ratio-21x9">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2683.366797003318!2d-69.97132478436957!3d47.414228779171716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cbee5596d7207bd%3A0x16a8f26936ff7a87!2s20%20Chemin%20du%20N%20du%20Rocher%2C%20Saint-Pac%C3%B4me%2C%20QC%20G0L%203X0!5e0!3m2!1sfr!2sca!4v1698242299372!5m2!1sfr!2sca"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer avec Bootstrap -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- Section Nous Joindre à gauche -->
+        <div class="col-md-6 mb-4">
+          <h5 class="text-uppercase">Nous Joindre</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt-fill"></i> Adresse : 20 Chemin du N du Rocher, Saint-Pacôme, QC G0L 3X0</li>
+            <li><i class="bi bi-telephone-fill"></i> Téléphone : <a href="tel:4188565181" class="text-warning">418
+                856-5181</a></li>
+            <li><i class="bi bi-phone-fill"></i> Cellulaire : <a href="tel:4188565181" class="text-warning">418
+                856-5181</a></li>
+            <li><i class="bi bi-envelope-fill"></i> Email : <a href="mailto:contact@paintballkam.com"
+                class="text-warning">actionpaintballkam@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <!-- Informations sur les développeurs à droite -->
+        <div class="col-md-6 text-md-end">
+          <h5 class="text-uppercase">Développeurs</h5>
+          <ul class="list-unstyled">
+            <li><strong>Samy</strong> - Développeur <a href="https://github.com/jeandupont" target="_blank"
+                class="text-warning">GitHub</a> | <a href="https://linkedin.com/in/jeandupont" target="_blank"
+                class="text-warning">LinkedIn</a></li>
+            <li><strong>Merzouk</strong> - Développeur <a href="https://github.com/mariemartin" target="_blank"
+                class="text-warning">GitHub</a> | <a href="https://linkedin.com/in/mariemartin" target="_blank"
+                class="text-warning">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p class="mb-0">&copy; 2025 Action Paintball Kam. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- JavaScript pour ajouter l'effet de brouillard au clic -->
+
+</body>
+
+</html>
