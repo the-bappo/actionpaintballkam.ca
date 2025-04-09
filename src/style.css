@@ -139,6 +139,15 @@ html {
   color: #ffc107;
 }
 
+#Accueil{
+  display: flex;
+  flex-direction: row;
+}
+
+.img-poster {
+  height: 40em;
+}
+
 /* Carousels */
 .carousel-item img {
   object-fit: cover;
@@ -220,3 +229,6 @@ h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
+
+
+/* mode telephone pour (600px et moins)*/
