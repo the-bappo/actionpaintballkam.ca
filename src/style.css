@@ -143,6 +143,12 @@ html {
   display: flex;
   flex-direction: row;
 }
+@media only screen and (max-width: 1000px) {
+  #Accueil{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .img-poster {
   height: 40em;
@@ -153,6 +159,14 @@ html {
   object-fit: cover;
   height: 550px;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .carousel-item img {
+    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+  }
 }
 
 .carousel-caption {
